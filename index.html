@@ -20,8 +20,7 @@
 <script>
     function copyEvent(id)
     {
-        window.getSelection().selectAllChildren(id);
-        document.execCommand("Copy")
+		navigator.clipboard.writeText(id);
     }
 </script>
 <style>@font-face{font-family:gilroy;src:local("Gilroy Semibold"),local("Gilroy-Semibold");font-weight:600;font-style:normal}
